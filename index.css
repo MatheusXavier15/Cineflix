@@ -1,0 +1,112 @@
+html {
+    overflow-x: hidden;
+    background-color: #121212;
+}
+body{
+    background-color: #121212;
+}
+
+#menu {
+    margin-top: 0%;
+    top: 0%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    max-height: 20%;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 25px;
+}
+
+#menu img {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 20%;
+}
+
+#menu a:hover {
+    color: red;
+    transition: 1s;
+}
+
+#Lançamento {
+    margin-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 800px;
+    color: white;
+    background-color: #121212;
+    display: block;
+}
+#Lançamento #Lançamento-Title {
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#Lançamento h1 {
+    margin: auto;
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#Slider iframe{
+    display: inline-block;
+    width: 1120px;
+    height: 630px;
+    margin-bottom: 4%;
+}
+
+.aside-text{
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+}
+.aside-text p{
+    font-weight: lighter;
+}
+
+footer {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 15pt;
+}
+
+footer p {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+}
