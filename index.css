@@ -1,19 +1,18 @@
 html {
+    height: 100%;
     overflow-x: hidden;
-    background-color: #121212;
-}
-body{
     background-color: #121212;
 }
 
 #menu {
+    z-index: 1;
     margin-top: 0%;
     top: 0%;
     background-color: black;
     color: white;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 14pt;
     max-height: 20%;
     display: block;
     position: fixed;
@@ -39,7 +38,7 @@ body{
 #menu img {
     vertical-align: middle;
     display: inline-block;
-    max-width: 20%;
+    max-width: 15%;
 }
 
 #menu a:hover {
@@ -48,13 +47,11 @@ body{
 }
 
 #Lançamento {
-    margin-top: 7%;
-    padding-bottom: 5%;
-    padding-left: 7%;
-    padding-right: 7%;
-    height: 800px;
+    margin-top: 5%;
+    height: auto;
     color: white;
-    background-color: #121212;
+    background: rgb(18,18,18);
+    background: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(9,8,8,1) 50%, rgba(0,0,0,1) 100%);
     display: block;
 }
 #Lançamento #Lançamento-Title {
@@ -66,6 +63,7 @@ body{
 }
 
 #Lançamento h1 {
+    font-size: 16pt;
     margin: auto;
     text-align: left;
     font-weight: bold;
@@ -74,9 +72,11 @@ body{
 
 #Slider iframe{
     display: inline-block;
-    width: 1120px;
-    height: 630px;
-    margin-bottom: 4%;
+    width: 550px;
+    height: 310px;
+    margin-bottom: 6%;
+    margin-left: 12%;
+    margin-right: auto;
 }
 
 .aside-text{
@@ -86,14 +86,90 @@ body{
     padding-left: 2%;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15pt;
+    font-size: 9pt;
 }
 .aside-text p{
     font-weight: lighter;
 }
 
+#Destaques{
+   
+    background-color: #171717;
+    width: 100%;
+    color: white;
+    display: block;
+    padding: 2%;
+}
+#Destaques #title-destaques{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Destaques li{
+    background-color: #121212;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#Destaques h1{
+    display: inline-block;
+    font-size: 16pt;
+    margin-left: 46%;
+    margin-right: auto;
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#div-destaques{
+    padding-top: 2%;
+}
+#MaisSeries{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 30px;
+    padding-top: 0%;
+}
+#MaisSeries > .card{
+    margin-bottom: 30px;
+}
+.card.Comédia {
+    display: initial;
+}
+.card.Adventure {
+    display: initial;
+}
+.card.Romance {
+    display: initial;
+}
+#Cards{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    max-width: 90%;
+    max-height: 690px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Cards > div.card{
+    margin-bottom: 20px;
+}
 footer {
-    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     height: auto;
@@ -102,7 +178,7 @@ footer {
     text-align: center;
     display: block;
     color: white;
-    font-size: 15pt;
+    font-size: 8pt;
 }
 
 footer p {
