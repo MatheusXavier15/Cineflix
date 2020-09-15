@@ -50,10 +50,11 @@ html {
     margin-top: 5%;
     height: auto;
     color: white;
-    background: rgb(18,18,18);
-    background: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(9,8,8,1) 50%, rgba(0,0,0,1) 100%);
+    background: rgb(18, 18, 18);
+    background: radial-gradient(circle, rgba(18, 18, 18, 1) 0%, rgba(9, 8, 8, 1) 50%, rgba(0, 0, 0, 1) 100%);
     display: block;
 }
+
 #Lançamento #Lançamento-Title {
     margin: auto;
     text-align: center;
@@ -70,7 +71,7 @@ html {
     font-family: sans-serif;
 }
 
-#Slider iframe{
+#Slider iframe {
     display: inline-block;
     width: 550px;
     height: 310px;
@@ -79,7 +80,7 @@ html {
     margin-right: auto;
 }
 
-.aside-text{
+.aside-text {
     max-width: 40%;
     display: inline-block;
     vertical-align: top;
@@ -88,24 +89,26 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 9pt;
 }
-.aside-text p{
+
+.aside-text p {
     font-weight: lighter;
 }
 
-#Destaques{
-   
+#Destaques {
     background-color: #171717;
     width: 100%;
     color: white;
     display: block;
     padding: 2%;
 }
-#Destaques #title-destaques{
+
+#Destaques #title-destaques {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
-#Destaques li{
+
+#Destaques li {
     background-color: #121212;
     display: inline-block;
     color: white;
@@ -114,7 +117,8 @@ html {
     padding-left: 5%;
     padding-right: 5%;
 }
-#Destaques h1{
+
+#Destaques h1 {
     display: inline-block;
     font-size: 16pt;
     margin-left: 46%;
@@ -123,10 +127,12 @@ html {
     font-weight: bold;
     font-family: sans-serif;
 }
-#div-destaques{
+
+#div-destaques {
     padding-top: 2%;
 }
-#MaisSeries{
+
+#MaisSeries {
     display: none;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -139,19 +145,24 @@ html {
     padding-bottom: 30px;
     padding-top: 0%;
 }
-#MaisSeries > .card{
+
+#MaisSeries>.card {
     margin-bottom: 30px;
 }
+
 .card.Comédia {
     display: initial;
 }
+
 .card.Adventure {
     display: initial;
 }
+
 .card.Romance {
     display: initial;
 }
-#Cards{
+
+#Cards {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -166,9 +177,87 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-#Cards > div.card{
+
+#Cards>div.card {
     margin-bottom: 20px;
 }
+
+#Avaliações {
+    background-color: #3D3D3D;
+    color: white;
+    padding-bottom: 1%;
+    height: 100%;
+}
+
+#Avaliações h1 {
+    padding-top: 2%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16pt;
+    color: white;
+}
+
+#Avaliações img {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    border-radius: 50%;
+}
+
+#Avaliações input{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    color: white; 
+    list-style: none; 
+    background-color: red; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#comentarios {
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    max-height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment {
+    box-sizing: border-box;
+    -webkit-box-shadow: 13px 14px 20px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 14px 20px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 14px 20px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 5%;
+    padding: 1%;
+    display: inline-block;
+    background-color: #171717;
+    height: 400px;
+    max-height: 60%;
+    max-width: 25%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.comment h2{
+    margin-top: 5%;
+    font-size: 16pt;
+    padding: 3%;
+}
+.comment p{
+    padding-left: 3%;
+    font-size: 12pt;
+}
+
 footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
@@ -177,6 +266,7 @@ footer {
     background-color: black;
     text-align: center;
     display: block;
+    position: absolute;
     color: white;
     font-size: 8pt;
 }
