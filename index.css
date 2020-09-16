@@ -25,14 +25,52 @@ html {
 }
 
 #menu ul {
-    vertical-align: middle;
     display: inline-block;
 }
 
 #menu li {
+    vertical-align: middle;
     display: inline-block;
     list-style: none;
     margin: 25px;
+}
+
+#search {
+    font-size: 10pt;
+    color: white;
+    background-color: #3D3D3D;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    max-width: 200px;
+}
+
+#search-txt {
+    outline: transparent;
+    color: white;
+    padding-left: 5%;
+    max-width: 160px;
+    border: none;
+    background-color: transparent;
+}
+
+#search-lupa {
+    padding: 3%;
+    display: block;
+}
+
+#submit-search {
+    background-color: #121212;
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: none;
+    outline: transparent;
+}
+
+#submit-search:hover {
+    background-color: red;
+    transition: all 0.5s;
 }
 
 #menu img {
@@ -43,7 +81,7 @@ html {
 
 #menu a:hover {
     color: red;
-    transition: 1s;
+    transition: all 0.5s;
 }
 
 #Lançamento {
@@ -208,17 +246,17 @@ html {
     border-radius: 50%;
 }
 
-#Avaliações input{
+#Avaliações input {
     margin-top: 2%;
     margin-bottom: 2%;
     display: block;
-    color: white; 
-    list-style: none; 
-    background-color: red; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px; 
-    margin-left: auto; 
+    color: white;
+    list-style: none;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -248,12 +286,14 @@ html {
     margin-left: 2%;
     margin-bottom: 2%;
 }
-.comment h2{
+
+.comment h2 {
     margin-top: 5%;
     font-size: 16pt;
     padding: 3%;
 }
-.comment p{
+
+.comment p {
     padding-left: 3%;
     font-size: 12pt;
 }
@@ -262,37 +302,165 @@ html {
     background-color: #171717;
     color: white;
 }
-#Entrevistas h1{
+
+#Entrevistas h1 {
     padding: 3%;
     display: block;
     text-align: center;
     font-size: 16pt;
 }
 
-#CarroselEntrevistas{
+#CarroselEntrevistas {
     display: block;
     padding-left: 6.5%;
     padding-right: 5%;
 }
 
-.content-entrev{
+.content-entrev {
     display: inline-block;
     padding-right: 1%;
     padding-left: 1%;
-
 }
 
-.content-entrev{
+.content-entrev {
     margin-bottom: 5%;
     width: 330px;
     box-sizing: border-box;
     white-space: normal
 }
 
-.content-entrev h3{
+.content-entrev h3 {
     margin-top: 5%;
     font-weight: bold;
     font-size: 12pt;
+}
+
+#container-grid {
+    color: white;
+    padding: 5%;
+    background-color: #121212;
+    display: grid;
+    grid-gap: 30px;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(3, 200px);
+}
+
+#container-grid>h2 {
+    display: block;
+    width: 100%;
+}
+
+#Novidades {
+    display: inline-block;
+    white-space: normal;
+    box-sizing: border-box;
+    max-height: max-content;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#conteudo-rep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+#conteudo-rep .rep {
+    box-sizing: border-box;
+    white-space: normal;
+    max-height: 195px;
+    max-width: 100%;
+    width: 100%;
+    height: 195px;
+    background-color: #121212;
+    -webkit-box-shadow: 10px 10px 19px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 19px -7px rgba(0, 0, 0, 0.75);
+}
+.rep{
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: normal;
+    box-sizing: border-box;
+    max-height: 195px;
+}
+.rep-text h3{
+    font-size: 14pt;
+}
+.rep-text{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+}
+.rep img{
+    vertical-align: top;
+    display: inline-block;
+    max-height: 100%;
+    margin-right: 2%;
+}
+#rep2{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.rep a {
+    color: red;
+}
+
+#Sobre {
+    white-space: normal;
+    box-sizing: border-box;
+    max-width: max-content;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#rep1:hover h3{
+    color: red;
+    transition: all 0.5s;
+}
+#rep2:hover h3{
+    color: red;
+    transition: all 0.5s;
+}
+#rep3:hover h3{
+    color: red;
+    transition: all 0.5s;
+}
+
+#Sobre>p {
+    padding: 5%;
+}
+
+#Editorial {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#txt-edit{
+    display: inline-block;
+    max-width: 50%;
+}
+#social{
+    vertical-align: top;
+    margin-left: 10%;
+    max-width: 50%;
+    display: inline-block;
+}
+#redes-imagens{
+    display: inline-block;
+}
+#redes-imagens img{
+    max-width: 20%;
 }
 
 footer {

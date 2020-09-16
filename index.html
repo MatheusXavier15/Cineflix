@@ -17,12 +17,18 @@
         <nav id="menu">
             <img src="Imagens/LOGO.png">
             <ul>
-                <li><a href="#a">Lançamentos</a></li>
-                <li><a href="#a">Em Destaque</a></li>
-                <li><a href="#a">Avaliações</a></li>
-                <li><a href="#a">Entrevistas & Making Of</a></li>
-                <li><a href="#a">Novidades</a></li>
-                <li>[pesquisa]</li>
+                <li><a href="#Lançamento">Lançamentos</a></li>
+                <li><a href="#Destaques">Em Destaque</a></li>
+                <li><a href="#Avaliações">Avaliações</a></li>
+                <li><a href="#Entrevistas">Entrevistas & Making Of</a></li>
+                <li><a href="#Novidades">Novidades</a></li>
+                <li>
+                    <div id="search">
+                        <img src="Imagens/lupa.png" alt="procurar, buscar" id="search-lupa">
+                        <input type="text" name="search-txt" id="search-txt" placeholder="Buscar...">
+                        <input type="submit" value="Buscar" id="submit-search">
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -282,7 +288,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                             quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                             deserunt quam asperiores minus quasi facere et?</p>
-                        <p>nota</p>
+                        <p>&starf;&starf;&starf;&starf;&starf;</p>
                     </div>
                 </div>
             </div>
@@ -295,7 +301,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                         quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                         deserunt quam asperiores minus quasi facere et?</p>
-                    <p>nota</p>
+                    <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
             <div class="comment">
@@ -307,7 +313,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                         quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                         deserunt quam asperiores minus quasi facere et?</p>
-                    <p>nota</p>
+                    <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
             <div class="comment">
@@ -320,7 +326,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                             quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                             deserunt quam asperiores minus quasi facere et?</p>
-                        <p>nota</p>
+                        <p>&starf;&starf;&starf;&starf;&starf;</p>
                     </div>
                 </div>
             </div>
@@ -333,7 +339,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                         quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                         deserunt quam asperiores minus quasi facere et?</p>
-                    <p>nota</p>
+                    <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
             <div class="comment">
@@ -345,7 +351,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
                         quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
                         deserunt quam asperiores minus quasi facere et?</p>
-                    <p>nota</p>
+                    <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
         </div>
@@ -361,15 +367,15 @@
                         <iframe src="https://www.youtube.com/embed/uPB7g1lMlgo" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                            <h3>Entrevista com elenco de Supernatural</h3>
-                            <p>Falam a respeito do encerramento de série e o futuro dos personagens</p>
+                        <h3>Entrevista com elenco de Supernatural</h3>
+                        <p>Falam a respeito do encerramento de série e o futuro dos personagens</p>
                     </div>
                     <div id="the100" class="content-entrev">
                         <iframe src="https://www.youtube.com/embed/W75Q19MQ-Js" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                            <h3>Entrevista com elenco de The 100</h3>
-                            <p>Falam a respeito de suas carreiras e o impacto da série</p>
+                        <h3>Entrevista com elenco de The 100</h3>
+                        <p>Falam a respeito de suas carreiras e o impacto da série</p>
                     </div>
                     <div id="Elite" class="content-entrev">
                         <iframe src="https://www.youtube.com/embed/-d9oS-qLcxA" frameborder="0"
@@ -382,52 +388,119 @@
                         <iframe src="https://www.youtube.com/embed/XgtcI_tkF_c" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                            <h3>Entrevista com elenco de GoT</h3>
-                            <p>Falam a respeito do impacto da série em suas carreiras e nos fãs</p>
+                        <h3>Entrevista com elenco de GoT</h3>
+                        <p>Falam a respeito do impacto da série em suas carreiras e nos fãs</p>
                     </div>
                 </div>
                 <div class="carousel-item" id="carrosel-2">
                     <div id="spn-making" class="content-entrev">
-                        <iframe src="https://www.youtube.com/embed/p18WkFoFvSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/p18WkFoFvSA" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <h3>Making Of Supernatural</h3>
                         <p>Os bastidores por trás das aventuras de Sam e Dean</p>
                     </div>
                     <div id="the100-making" class="content-entrev">
-                        <iframe src="https://www.youtube.com/embed/3FNK7pbK854" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/3FNK7pbK854" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <h3>Making Of The 100</h3>
                         <p>Erros de gravação e coletânea dos bastidores</p>
                     </div>
                     <div id="Elite-making" class="content-entrev">
-                        <iframe src="https://www.youtube.com/embed/VIWK96MAMd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/VIWK96MAMd0" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <h3>Making Of Elite</h3>
                         <p>Como foi gravado o último episódio da temporada?</p>
                     </div>
                     <div id="got-making" class="content-entrev">
-                        <iframe src="https://www.youtube.com/embed/yx9dRL1BCCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/yx9dRL1BCCQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <h3>Making Of Game of Thrones</h3>
                         <p>Set de filmagem e produção da temporada</p>
                     </div>
                 </div>
             </div>
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators" style="z-index: 0;">
                 <li data-target="#CarroselEntrevistas" data-slide-to="0" class="active"></li>
                 <li data-target="#CarroselEntrevistas" data-slide-to="1"></li>
             </ol>
         </div>
-        
+
     </section>
 
+    <section id="Novidades">
+        <div id="container-grid">
+            <div id="Novidades">
+                <h2>Novidades</h2>
+                <div id="conteudo-rep">
 
+                    <div id="rep1" class="rep">
+                        <img src="Imagens/The100-rep.jpg" alt="">
+                        <div class="rep-text">
+                            <h3>The 100 7ª temporada: preview do episódio 7x14 sugere mais mortes</h3>
+                            <p>A 7ª temporada de The 100 não está sendo fácil para os fãs da série. Depois da morte de
+                                um dos principais personagens da série no episódio anterior, a promo de The 100 7x14
+                                sugere que mais despedidas podem acontecer.
+                                <a href="https://www.tecmundo.com.br/minha-serie/177706-the-100-7-temporada-preview-episodio-7x14.htm" target="_blank"><br>+ Saiba mais</a></p>
+                        </div>
+                    </div>
 
-    <article id="Novidades">
+                    <div id="rep2" class="rep">
+                        <img src="Imagens/amy.jpg.png" alt="">
+                        <div class="rep-text">
+                            <h3>Atriz de Brooklyn 99 critica versão canadense da série</h3>
+                            <p>A estrela de Brooklyn 99, Melissa Fumero, que interpreta a personagem Santiago, criticou
+                                o remake canadense da série pela falta de representatividade ao escalar atores brancos
+                                para os papéis latinos.
+                                <a href="https://www.tecmundo.com.br/minha-serie/176421-atriz-brooklyn-99-critica-versao-canadense-serie.htm" target="_blank">+ Saiba mais</a></p>
+                        </div>
+                    </div>
 
-    </article>
-    <aside id="sobre">
+                    <div id="rep3" class="rep">
+                        <img src="Imagens/Dean.jpg.png" alt="">
+                        <div class="rep-text">
+                            <h3>Jensen Ackles se despede de Supernatural publicando texto e imagem emocionante</h3>
+                            <p>O astro Jensen Ackles em uma publicação agradeceu aos fãs e aos membros da equipe de
+                                apoio pelos 15 anos de aventura e compartilhou imagens do seu último dia de filmagens da
+                                produção.
+                                <a href="https://observatoriodeseries.uol.com.br/cw/jensen-ackles-se-despede-de-supernatural-publicando-texto-e-imagem-emocionante" target="_blank" >+ Saiba mais</a></p>
+                        </div>
+                    </div>
 
-    </aside>
-    <aside id="Editorial">
+                </div>
+            </div>
+            <div id="Sobre">
+                <h2>Sobre</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem modi ea temporibus alias, accusantium
+                    dolorum iste totam fuga et voluptate, excepturi perspiciatis dignissimos architecto reprehenderit
+                    quisquam. Dignissimos earum consectetur illo?Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Doloribus porro id ducimus fugiat qui quod autem eligendi incidunt. Molestias placeat ducimus
+                    consequuntur odit error commodi? Fugiat explicabo dolore nobis quisquam.</p>
+                <p>&starf;&starf;&starf;&starf;&starf;</p>
+            </div>
+            <div id="Editorial">
+                <h2>Editorial</h2>
+                <div id="txt-edit">
+                    <h6>Redação:</h6>
+                    <p>Matheus Xavier</p>
+                    <h6>Gerente Geral:</h6>
+                    <p>Matheus Xavier</p>
+                </div>
+                <div id="social">
+                    <h6>Nos acompanhe também nas redes sociais:</h6>
+                    <div id="redes-imagens">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="Imagens/facebook-icon.png" alt=""></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="Imagens/INSTAGRAM-ICON.png" alt=""></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="Imagens/twitter-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </aside>
     <footer>
         <img src="Imagens/LOGO.png" style="max-width: 10%; display: inline-block; vertical-align: middle;">
         <p>&copy;Copyright 2020 - Matheus Xavier de Oliveira | Disciplina de Desenvolvimento de Interfaces Web - ICEI
