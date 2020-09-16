@@ -1,3 +1,4 @@
+@media screen and (min-width: 1440px){/*computadores & desktops*/
 html {
     height: 100%;
     overflow-x: hidden;
@@ -108,6 +109,11 @@ html {
     font-weight: bold;
     font-family: sans-serif;
 }
+#Slider{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
 
 #Slider iframe {
     display: inline-block;
@@ -138,6 +144,11 @@ html {
     color: white;
     display: block;
     padding: 2%;
+}
+
+#Cards-total{
+    max-width: 1500px;
+    margin: auto;
 }
 
 #Destaques #title-destaques {
@@ -309,11 +320,19 @@ html {
     text-align: center;
     font-size: 16pt;
 }
+.carousel-inner{
+    width: 1440px;
+    max-width: 1440px;
+    padding-left: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 #CarroselEntrevistas {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    padding-left: 6.5%;
-    padding-right: 5%;
 }
 
 .content-entrev {
@@ -480,4 +499,17 @@ footer p {
     display: block;
     padding-bottom: 20px;
     text-align: center;
+}
+}
+
+@media screen and (max-width: 440px){/* smartphones */
+    
+}
+
+@media screen and (min-width: 440px) and (max-width: 780px){/* Tablets */
+    
+}
+
+@media screen and (min-width: 780px) and (max-width: 1280px){/* notebook & tablets pro */
+    
 }
