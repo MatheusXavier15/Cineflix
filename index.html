@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="index.js">
-
-    </script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/6a76e17643.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
         <nav id="menu">
             <img src="Imagens/LOGO.png">
-            <ul>
+            <input type="checkbox" name="menu-bars" id="menu-bars">
+            <label for="menu-bars" id="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul id="menu-list">
                 <li><a href="#Lançamento">Lançamentos</a></li>
                 <li><a href="#Destaques">Em Destaque</a></li>
                 <li><a href="#Avaliações">Avaliações</a></li>
@@ -36,7 +40,7 @@
     <section id="Lançamento">
         <h1 id="Lançamento-Title">Lançamentos</h1>
         <div id="Slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="padding: 0px;">
                 <div class="carousel-item active">
 
                     <iframe src="https://www.youtube.com/embed/9t6QhZ0oeL0" frameborder="0"
@@ -54,7 +58,7 @@
                         <p><em style="font-weight: bold;">Estreia:</em> 2014</p>
                         <p><em style="font-weight: bold;">Elenco:</em> Eliza Taylor | Bob Morley | Lindsey Morgan |
                             Marie Avgeropoulos</p>
-                        <p><em style="font-weight: bold;">Avaliação:</em> &starf;&starf;&starf;&starf;&starf;</p>
+                        <p class="Aval"><em style="font-weight: bold;" >Avaliação:</em> &starf;&starf;&starf;&starf;&starf;</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -77,7 +81,7 @@
                         <p><em style="font-weight: bold;">Estreia:</em> 2011</p>
                         <p><em style="font-weight: bold;">Elenco:</em> Emilia Clarke | Kit Harington | Sophie Turner |
                             Maisie Williams</p>
-                        <p><em style="font-weight: bold;">Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
+                        <p class="Aval"><em style="font-weight: bold;" >Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -97,7 +101,7 @@
                         <p><em style="font-weight: bold;">Estreia:</em> 2005</p>
                         <p><em style="font-weight: bold;">Elenco:</em> Jensen Ackles | Jared Padalecki | Misha Collins |
                             Alexander Calvert</p>
-                        <p><em style="font-weight: bold;">Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
+                        <p class="Aval"><em style="font-weight: bold;" >Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -119,7 +123,7 @@
                         <p><em style="font-weight: bold;">Estreia:</em> 2016</p>
                         <p><em style="font-weight: bold;">Elenco:</em> Bianca Comparato | Rodolfo Valente | Vaneza
                             Oliveira | Bruno Fagundes</p>
-                        <p><em style="font-weight: bold;">Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
+                        <p class="Aval"><em style="font-weight: bold;" >Avaliação:</em> &starf;&starf;&starf;&starf;&star;</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +142,7 @@
         <div id="div-destaques">
             <h1>Em destaque</h1>
             <div id="title-destaques">
-                <div class="dropdown">
+                <div class="dropdown" style="display: block; float: right;">
                     <button style="background-color: black; color: white;" class="btn btn-secondary dropdown-toggle"
                         type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -270,11 +274,11 @@
             </div>
         </div>
         <input type="button" name="MaisSeries-buton" id="MaisSeries-buton" value="&plus; Mais Séries"
-            style="color: white; list-style: none; background-color: red; border: none; border-radius: 5px; padding: 10px; margin-left: 46%; margin-right: auto;"
+            style="color: white; list-style: none; background-color: red; border: none; border-radius: 5px; padding: 10px; margin-left: auto; margin-right: auto; max-width: 15vw; font-size: 1.8vw; "
             onclick="MaisSeries()">
 
     </section>
-
+<!-- 
     <section id="Avaliações">
         <h1>Últimas Avaliações</h1>
         <div id="comentarios">
@@ -510,7 +514,7 @@
         <img src="Imagens/LOGO.png" style="max-width: 10%; display: inline-block; vertical-align: middle;">
         <p>&copy;Copyright 2020 - Matheus Xavier de Oliveira | Disciplina de Desenvolvimento de Interfaces Web - ICEI
             PUC Minas</p>
-    </footer>
+    </footer> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
