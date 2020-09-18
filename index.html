@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Cineflix</title>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/6a76e17643.js" crossorigin="anonymous"></script>
 </head>
@@ -39,7 +40,7 @@
 
     <section id="Lançamento">
         <h1 id="Lançamento-Title">Lançamentos</h1>
-        <div id="Slider" class="carousel slide" data-ride="carousel">
+        <div id="Slider" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner" style="padding: 0px;">
                 <div class="carousel-item active">
 
@@ -274,11 +275,11 @@
             </div>
         </div>
         <input type="button" name="MaisSeries-buton" id="MaisSeries-buton" value="&plus; Mais Séries"
-            style="color: white; list-style: none; background-color: red; border: none; border-radius: 5px; padding: 10px; margin-left: auto; margin-right: auto; max-width: 15vw; font-size: 1.8vw; "
+            style="display:block; color: white; list-style: none; background-color: red; border: none; border-radius: 5px; padding:1.5vw; margin-left: auto; margin-right: auto; max-width: 15vw; font-size: 1.8vw; max-height: 4vh;"
             onclick="MaisSeries()">
 
     </section>
-<!-- 
+
     <section id="Avaliações">
         <h1>Últimas Avaliações</h1>
         <div id="comentarios">
@@ -289,9 +290,7 @@
                     </div>
                     <div>
                         <h2>Henrique Martins</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                            quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                            deserunt quam asperiores minus quasi facere et?</p>
+                        <p>Sempre que vejo alguma série eu vejo no Cineflix. Maratono todos os dias alguns episódios das minhas séries prediletas e a plataforma me supriu em qualidade e conteúdo.</p>
                         <p>&starf;&starf;&starf;&starf;&starf;</p>
                     </div>
                 </div>
@@ -302,9 +301,7 @@
                 </div>
                 <div>
                     <h2>Thamires Lima</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                        quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                        deserunt quam asperiores minus quasi facere et?</p>
+                    <p>Diversidade, qualidade, profissionalismo a gente encontra bem aqui na Cineflix. Suporte perfeito, tenho acesso a todas as minhas séries preferidas com o conteúdo completo.</p>
                     <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
@@ -314,9 +311,7 @@
                 </div>
                 <div>
                     <h2>Julia do Carmo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                        quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                        deserunt quam asperiores minus quasi facere et?</p>
+                    <p>Agora posso ver minhas séries sem me preocupar com quantidade de assinaturas e faturas. E o melhor de tudo com qualidade excepcional!</p>
                     <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
@@ -327,9 +322,7 @@
                     </div>
                     <div>
                         <h2>Ana Maria</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                            quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                            deserunt quam asperiores minus quasi facere et?</p>
+                        <p>Simplesmente perfeito e maravilhoso, extremamente inovador com um acesso fácil, muita variedade e bastante eficiência. Estão de parabéns!</p>
                         <p>&starf;&starf;&starf;&starf;&starf;</p>
                     </div>
                 </div>
@@ -340,9 +333,7 @@
                 </div>
                 <div>
                     <h2>Paulo Henrique</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                        quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                        deserunt quam asperiores minus quasi facere et?</p>
+                    <p>Oferece as mesmas propostas de outras empresas de streaming com qualidade equivalente, e o melhor, grátis! Cineflix a melhor plataforma de streaming, falo com convicção.</p>
                     <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
@@ -352,9 +343,7 @@
                 </div>
                 <div>
                     <h2>João Pedro</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda doloremque dolore
-                        quibusdam doloribus consectetur optio. Adipisci, quisquam ab libero beatae, placeat rem,
-                        deserunt quam asperiores minus quasi facere et?</p>
+                    <p>Original e adequado a proposta, Cineflix me atendeu perfeitamente quando eu precisei ver as séries que mais gosto. Simplesmente perfeito em todas as suas funcionalidades!</p>
                     <p>&starf;&starf;&starf;&starf;&starf;</p>
                 </div>
             </div>
@@ -481,12 +470,7 @@
             </div>
             <div id="Sobre">
                 <h2>Sobre</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem modi ea temporibus alias, accusantium
-                    dolorum iste totam fuga et voluptate, excepturi perspiciatis dignissimos architecto reprehenderit
-                    quisquam. Dignissimos earum consectetur illo?Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Doloribus porro id ducimus fugiat qui quod autem eligendi incidunt. Molestias placeat ducimus
-                    consequuntur odit error commodi? Fugiat explicabo dolore nobis quisquam.</p>
-                <p>&starf;&starf;&starf;&starf;&starf;</p>
+                <p>Através do objetivo de diversificar e tornar acessível o streaming de vídeos, séries e filmes, o Cineflix dispõe ao seu público de forma gratuita e com qualidade uma gama de diferentes seriados e filmes para o entretenimento. </p>
             </div>
             <div id="Editorial">
                 <h2>Editorial</h2>
@@ -511,10 +495,11 @@
     </section>
 
     <footer>
-        <img src="Imagens/LOGO.png" style="max-width: 10%; display: inline-block; vertical-align: middle;">
+        <img src="Imagens/LOGO.png" style="max-width: 25%; display: inline-block; vertical-align: middle;">
         <p>&copy;Copyright 2020 - Matheus Xavier de Oliveira | Disciplina de Desenvolvimento de Interfaces Web - ICEI
             PUC Minas</p>
-    </footer> -->
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
