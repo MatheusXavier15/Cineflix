@@ -5,6 +5,11 @@
         overflow-x: hidden;
         background-color: #121212;
     }
+    body{
+        height: 100%;
+        overflow-x: hidden;
+        background-color: #000000;
+    }
     #menu {
         z-index: 1;
         margin-top: 0%;
@@ -142,7 +147,7 @@
         display: inline-block;
         margin-left: auto;
         margin-right: auto;
-        
+        vertical-align: middle;
     }
     #Destaques li {
         background-color: #121212;
@@ -164,6 +169,20 @@
     }
     #div-destaques {
         padding-top: 2%;
+    }
+    #MaisSeries-buton{
+        display:block; 
+        color: white; 
+        list-style: none; 
+        background-color: red; 
+        border: none; 
+        border-radius: 5px; 
+        padding: 5px;
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 20%; 
+        font-size: 1vw; 
+        max-height: 6vh;
     }
     #MaisSeries {
         display: none;
@@ -197,7 +216,7 @@
         overflow: hidden;
         justify-content: space-between;
         max-width: 90%;
-        max-height: 690px;
+        max-height: 90vh;
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 3%;
@@ -667,6 +686,20 @@
         padding: 5% 9% 5% 9%;
         align-items: center;
     }
+    #MaisSeries-buton{
+        display:block; 
+        color: white; 
+        list-style: none; 
+        background-color: red; 
+        border: none; 
+        border-radius: 5px; 
+        padding:1.5vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 15vw; 
+        font-size: 1.8vw; 
+        max-height: 4vh;
+    }
     #MaisSeries {
         display: none;
         flex-wrap: wrap;
@@ -986,7 +1019,7 @@
     }
 }
 
-@media screen and (min-width: 440px) and (max-width: 780px) {
+@media screen and (min-width: 440px) and (max-width: 1366px) {
     /* Tablets */
     html {
         height: 100%;
@@ -1199,6 +1232,22 @@
         padding: 5% 9% 5% 9%;
         align-items: center;
     }
+
+    #MaisSeries-buton{
+        display:block; 
+        color: white; 
+        list-style: none; 
+        background-color: red; 
+        border: none; 
+        border-radius: 5px; 
+        padding:1.5vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 15vw; 
+        font-size: 1.8vw; 
+        max-height: 4vh;
+    }
+
     #MaisSeries {
         display: none;
         flex-wrap: wrap;
@@ -1516,8 +1565,4 @@
         display: block;
         text-align: center;
     }
-}
-
-@media screen and (min-width: 780px) and (max-width: 1280px) {
-    /* notebook & tablets pro */
 }
