@@ -4,6 +4,7 @@
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
+
     }
     body{
         height: 100%;
@@ -456,19 +457,21 @@
     footer {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: normal;
-        height: auto;
+        height: 25vh;
         width: 100%;
         background-color: black;
         text-align: center;
         display: block;
-        position: absolute;
+        padding-bottom: 0!important;
+        bottom: 0%!important;
+        margin-bottom: 0%!important;
         color: white;
-        font-size: 8pt;
     }
     footer p {
         display: block;
         padding-bottom: 20px;
         text-align: center;
+        font-size: 1vw;
     }
 }
 
@@ -490,6 +493,7 @@
         height: 80px;
         top: 0px;
     }
+
     #menu{
         display: absolute;
         width: 100%;
@@ -1008,7 +1012,6 @@
         background-color: black;
         text-align: center;
         display: block;
-        position: absolute;
         color: white;
         padding: 5vw;
         font-size: 2vw;
@@ -1019,7 +1022,7 @@
     }
 }
 
-@media screen and (min-width: 440px) and (max-width: 1444px) {
+@media screen and (min-width: 440px) and (max-width: 1443px) {
     /* Tablets */
     html {
         height: 100%;
@@ -1443,7 +1446,7 @@
     }
 
     #Novidades {
-        display: inline-block;
+        display: grid;
         white-space: normal;
         box-sizing: border-box;
         max-height: max-content;
@@ -1556,7 +1559,6 @@
         background-color: black;
         text-align: center;
         display: block;
-        position: absolute;
         color: white;
         padding: 5vw;
         font-size: 2vw;
