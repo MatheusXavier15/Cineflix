@@ -1,15 +1,29 @@
+/*computadores & desktops*/
 @media screen and (min-width: 1440px) {
-    /*computadores & desktops*/
+    
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
-
+        scroll-behavior: smooth;
     }
     body{
         height: 100%;
         overflow-x: hidden;
         background-color: #000000;
+    }
+    body::-webkit-scrollbar{
+        background-color: #000000;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: red;
+        border-radius: 40px;
+        -o-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    body::-webkit-scrollbar-thumb:hover{
+        background-color: darkred;
     }
     #menu {
         z-index: 1;
@@ -232,7 +246,7 @@
         background-color: #3D3D3D;
         color: white;
         padding-bottom: 1%;
-        height: 100%;
+
     }
     #Avaliações h1 {
         padding-top: 2%;
@@ -474,13 +488,14 @@
         font-size: 1vw;
     }
 }
-
+/* smartphones */
 @media screen and (max-width: 440px) {
-    /* smartphones */
+    
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
+        scroll-behavior: smooth;
     }
     #header{
         vertical-align: middle;
@@ -1021,13 +1036,14 @@
         text-align: center;
     }
 }
-
+/* Tablets */
 @media screen and (min-width: 440px) and (max-width: 1443px) {
-    /* Tablets */
+    
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
+        scroll-behavior: smooth;
     }
     #header{
         vertical-align: middle;
