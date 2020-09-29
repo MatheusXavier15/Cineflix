@@ -65,4 +65,4 @@ function MaisComentarios() {
     document.getElementById('comentarios').style.maxHeight = '100%';
     document.getElementById('comentarios').style.transition = 'all 1s';
     document.getElementById('MaisComentarios').style.display = 'none';
-}
+} 
