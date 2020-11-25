@@ -66,3 +66,4 @@ function MaisComentarios() {
     document.getElementById('comentarios').style.transition = 'all 1s';
     document.getElementById('MaisComentarios').style.display = 'none';
 } 
+

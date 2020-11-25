@@ -1,28 +1,38 @@
-/*computadores & desktops*/
+/* Computadores & Desktops */
+
 @media screen and (min-width: 1440px) {
-    
+    .card-img-top{
+        width: 18.5vw!important;
+    }
+    .card-body{
+        align-items: center!important;
+        padding:8%!important;
+        width: 18.5vw!important;
+        margin: 0vw!important;
+        display: block;
+    }
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
         scroll-behavior: smooth;
     }
-    body{
+    body {
         height: 100%;
         overflow-x: hidden;
         background-color: #000000;
     }
-    body::-webkit-scrollbar{
+    body::-webkit-scrollbar {
         background-color: #000000;
     }
-    body::-webkit-scrollbar-thumb{
+    body::-webkit-scrollbar-thumb {
         background-color: red;
         border-radius: 40px;
         -o-transition: all 0.5s;
         -moz-transition: all 0.5s;
         transition: all 0.5s;
     }
-    body::-webkit-scrollbar-thumb:hover{
+    body::-webkit-scrollbar-thumb:hover {
         background-color: darkred;
     }
     #menu {
@@ -147,6 +157,7 @@
     .aside-text p {
         font-weight: lighter;
     }
+    /*Parte dos destaques*/
     #Destaques {
         background-color: #171717;
         width: 100%;
@@ -155,7 +166,7 @@
         padding: 2%;
     }
     #Cards-total {
-        max-width: 1500px;
+        max-height: 50rem;
         margin: auto;
     }
     #Destaques #title-destaques {
@@ -185,18 +196,19 @@
     #div-destaques {
         padding-top: 2%;
     }
-    #MaisSeries-buton{
-        display:block; 
-        color: white; 
-        list-style: none; 
-        background-color: red; 
-        border: none; 
-        border-radius: 5px; 
+    #MaisSeries-buton {
+        display: block;
+        color: white;
+        list-style: none;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
         padding: 5px;
-        margin-left: auto; 
-        margin-right: auto; 
-        max-width: 20%; 
-        font-size: 1vw; 
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 20%;
+        font-size: 1vw;
         max-height: 6vh;
     }
     #MaisSeries {
@@ -224,8 +236,10 @@
     .card.Romance {
         display: initial;
     }
+    #Cards-total{
+        max-height: 100%;
+    }
     #Cards {
-        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -239,14 +253,31 @@
         margin-left: auto;
         margin-right: auto;
     }
-    #Cards>div.card {
-        margin-bottom: 20px;
+    #CardsNew {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Cards>div.card {   
+        margin-bottom: 6em;
+    }
+    #CardsNew>div.card {
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
     #Avaliações {
         background-color: #3D3D3D;
         color: white;
         padding-bottom: 1%;
-
     }
     #Avaliações h1 {
         padding-top: 2%;
@@ -488,16 +519,54 @@
         font-size: 1vw;
     }
 }
-/* smartphones */
+
+/* Smartphones */
+
 @media screen and (max-width: 440px) {
-    
+
+    #CardsNew {
+        margin-bottom: 5%!important;
+        margin-top: 20%!important;
+        box-sizing: border-box;
+        display: flex!important;
+        flex-wrap: wrap!important;
+        justify-content: space-between!important;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #CardsNew h5{
+        font-size: 2.4vw;
+    }
+    #CardsNew p{
+        font-size: 1.9vw;
+    }
+    .btn btn-primary{
+        width: 5vw!important;
+        display: block!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        bottom: 5%!important;
+        /* position: absolute!important; */
+    }
+    #CardsNew>div.card {
+        box-sizing: border-box!important;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .card-img-top{
+        width: 28.5vw!important;
+    }
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
         scroll-behavior: smooth;
     }
-    #header{
+    #header {
         vertical-align: middle;
         align-content: center;
         background-color: black;
@@ -508,33 +577,31 @@
         height: 80px;
         top: 0px;
     }
-
-    #menu{
+    #menu {
         display: absolute;
         width: 100%;
         height: 100%;
     }
-
-    #menu-bars{
+    #menu-bars {
         text-decoration: none;
         display: none;
-    } 
-    #menu-bars:checked ~ label i:nth-child(1){
+    }
+    #menu-bars:checked~label i:nth-child(1) {
         display: none;
     }
-    #menu-bars:checked ~ label i:nth-child(2){
+    #menu-bars:checked~label i:nth-child(2) {
         display: block;
     }
-    #menu-bars:not(checked) ~ label i:nth-child(1){
+    #menu-bars:not(checked)~label i:nth-child(1) {
         display: block;
     }
-    #menu-bars:not(checked) ~ label i:nth-child(2){
+    #menu-bars:not(checked)~label i:nth-child(2) {
         display: none;
     }
-    #menu-bars:checked ~ ul {
+    #menu-bars:checked~ul {
         height: 100%;
     }
-    #menu-list{
+    #menu-list {
         z-index: 5!important;
         display: flex;
         position: fixed;
@@ -548,8 +615,7 @@
         overflow: hidden;
         transition: all 0.5s;
     }
-
-    #menu li{
+    #menu li {
         margin-bottom: 30px;
         text-align: center;
         display: block;
@@ -557,16 +623,15 @@
         text-decoration: none;
         list-style: none;
     }
-    
-    #menu li > a {
+    #menu li>a {
         display: block;
         text-align: center;
         color: white;
     }
-    #menu ul{
-        padding:0px;
+    #menu ul {
+        padding: 0px;
     }
-    #menu-icon{
+    #menu-icon {
         display: block;
         color: white;
         width: 50px;
@@ -577,15 +642,29 @@
         line-height: 60px;
         z-index: 999!important;
     }
-    
-    #menu-icon i{
+    #menu-icon i {
         font-size: 20px;
     }
-
-    #search {
-        display: none;
+    #search-lupa {
+        padding: 3%;
+        display: none!important;
     }
-   
+    #search-txt{
+        background-color: #121212;
+        color: white;
+        border-color: transparent;
+    }
+    #submit-search {
+        background-color: red;
+        color: white;
+        border-radius: 0px 7px 7px 0px;
+        border: none;
+        outline: transparent;
+    }
+    #submit-search:hover {
+        background-color: red;
+        transition: all 0.5s;
+    }
     #menu img {
         margin-left: auto;
         margin-right: auto;
@@ -634,30 +713,29 @@
         margin-left: auto;
         height: 200px;
         margin-right: auto;
-        
     }
-    .aside-text{
+    .aside-text {
         margin-left: 0px;
         margin-top: 5%;
         height: auto;
         color: white;
         display: block;
     }
-    #Slider h1{
+    #Slider h1 {
         color: white;
         display: block;
         width: auto;
         margin-bottom: 2%;
         text-align: center;
     }
-    em{
+    em {
         display: none;
     }
     .aside-text p {
         display: none;
         font-weight: lighter;
     }
-    .Aval{
+    .Aval {
         display: block!important;
         text-align: center;
         margin-bottom: 12%;
@@ -750,7 +828,9 @@
     .card-body{
         align-items: center!important;
         padding:8%!important;
-        height: 38.5vw!important;
+        width: 28.5vw!important;
+        margin: 0vw!important;
+        display: block;
     }
     #Cards {
         box-sizing: border-box;
@@ -765,21 +845,41 @@
         margin-right: auto;
     }
     #Cards h5{
-        font-size: 2.4vw;
+        font-size: 2vw;
     }
     #Cards p{
-        font-size: 1.9vw;
+        font-size: 1.5vw;
     }
-    .btn{
-        width: 15vw!important;
+    .btn btn-primary{
+        width: 10vw!important;
         display: block!important;
         margin-left: auto!important;
         margin-right: auto!important;
         bottom: 5%!important;
-        position: absolute!important;
     }
     #Cards a{
         font-size: 1vw; 
+    }
+    #CardsNew a{
+        font-size: 1vw!important;
+    }
+    #CardsNew {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #CardsNew>div.card {
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
     #Cards>div.card {
         margin-bottom: 20px;
@@ -832,10 +932,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    #comentarios p{
+    #comentarios p {
         font-size: 1.5vw;
     }
-    #comentarios h2{
+    #comentarios h2 {
         font-size: 2vw;
     }
     .comment {
@@ -907,12 +1007,10 @@
         grid-gap: 30px;
         width: 100%;
     }
-    
-    #container-grid h2{
+    #container-grid h2 {
         font-size: 5vw;
         margin-top: 5%;
     }
-
     #Novidades {
         display: inline-block;
         white-space: normal;
@@ -967,7 +1065,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .rep p{
+    .rep p {
         font-size: 1.7vw;
     }
     .rep a {
@@ -1036,16 +1134,63 @@
         text-align: center;
     }
 }
+
 /* Tablets */
-@media screen and (min-width: 440px) and (max-width: 1443px) {
-    
+
+@media screen and (min-width: 440px) and (max-width: 1439px) {
+    .btn{
+        width: 15vw!important;
+        display: block!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        bottom: 5%!important;
+
+    }
+    #CardsNew a{
+        font-size: 1vw!important;
+    }
+    #CardsNew {
+        margin-bottom: 5%!important;
+        margin-top: 20%!important;
+        box-sizing: border-box;
+        display: flex!important;
+        flex-wrap: wrap!important;
+        justify-content: space-between!important;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #CardsNew h5{
+        font-size: 2vw;
+    }
+    #CardsNew p{
+        font-size: 1.4vw;
+    }
+    #CardsNew>div.card {
+        box-sizing: border-box!important;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .card-img-top{
+        width: 28.5vw!important;
+    }
+    .card-body{
+        align-items: center!important;
+        padding:8%!important;
+        width: 28.5vw!important;
+        margin: 0vw!important;
+        display: block;
+    }
     html {
         height: 100%;
         overflow-x: hidden;
         background-color: #121212;
         scroll-behavior: smooth;
     }
-    #header{
+    #header {
         vertical-align: middle;
         align-content: center;
         background-color: black;
@@ -1055,32 +1200,31 @@
         max-width: 100%;
         top: 0px;
     }
-    #menu{
+    #menu {
         display: absolute;
         width: 100%;
         height: 100%;
     }
-
-    #menu-bars{
+    #menu-bars {
         text-decoration: none;
         display: none;
-    } 
-    #menu-bars:checked ~ label i:nth-child(1){
+    }
+    #menu-bars:checked~label i:nth-child(1) {
         display: none;
     }
-    #menu-bars:checked ~ label i:nth-child(2){
+    #menu-bars:checked~label i:nth-child(2) {
         display: block;
     }
-    #menu-bars:not(checked) ~ label i:nth-child(1){
+    #menu-bars:not(checked)~label i:nth-child(1) {
         display: block;
     }
-    #menu-bars:not(checked) ~ label i:nth-child(2){
+    #menu-bars:not(checked)~label i:nth-child(2) {
         display: none;
     }
-    #menu-bars:checked ~ ul {
+    #menu-bars:checked~ul {
         height: 100%;
     }
-    #menu-list{
+    #menu-list {
         z-index: 5!important;
         display: flex;
         position: fixed;
@@ -1094,8 +1238,7 @@
         overflow: hidden;
         transition: all 0.5s;
     }
-
-    #menu li{
+    #menu li {
         margin-bottom: 30px;
         text-align: center;
         display: block;
@@ -1103,16 +1246,15 @@
         text-decoration: none;
         list-style: none;
     }
-    
-    #menu li > a {
+    #menu li>a {
         display: block;
         text-align: center;
         color: white;
     }
-    #menu ul{
-        padding:0px;
+    #menu ul {
+        padding: 0px;
     }
-    #menu-icon{
+    #menu-icon {
         display: block;
         color: white;
         width: 50px;
@@ -1123,15 +1265,12 @@
         line-height: 60px;
         z-index: 999!important;
     }
-    
-    #menu-icon i{
+    #menu-icon i {
         font-size: 20px;
     }
-
     #search {
         display: none;
     }
-   
     #menu img {
         margin-left: auto;
         margin-right: auto;
@@ -1179,30 +1318,29 @@
         margin-left: auto;
         height: 40vh;
         margin-right: auto;
-        
     }
-    .aside-text{
+    .aside-text {
         margin-left: 0px;
         margin-top: 5%;
         height: auto;
         color: white;
         display: block;
     }
-    #Slider h1{
+    #Slider h1 {
         color: white;
         display: block;
         width: auto;
         margin-bottom: 2%;
         text-align: center;
     }
-    em{
+    em {
         display: none;
     }
     .aside-text p {
         display: none;
         font-weight: lighter;
     }
-    .Aval{
+    .Aval {
         display: block!important;
         text-align: center;
         margin-bottom: 12%;
@@ -1216,6 +1354,7 @@
     }
     #Cards-total {
         overflow: hidden;
+        max-height: 42rem;
         max-width: 80vw;
         margin: auto;
     }
@@ -1224,7 +1363,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .dropdown button{
+    .dropdown button {
         font-size: 2.4vw!important;
     }
     #Destaques li {
@@ -1251,22 +1390,20 @@
         padding: 5% 9% 5% 9%;
         align-items: center;
     }
-
-    #MaisSeries-buton{
-        display:block; 
-        color: white; 
-        list-style: none; 
-        background-color: red; 
-        border: none; 
-        border-radius: 5px; 
-        padding:1.5vw; 
-        margin-left: auto; 
-        margin-right: auto; 
-        max-width: 15vw; 
-        font-size: 1.8vw; 
+    #MaisSeries-buton {
+        display: block;
+        color: white;
+        list-style: none;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 15vw;
+        font-size: 1.8vw;
         max-height: 4vh;
     }
-
     #MaisSeries {
         display: none;
         flex-wrap: wrap;
@@ -1292,13 +1429,14 @@
     .card.Romance {
         display: initial;
     }
-    .card{
-       max-width: 16vw;
+    .card {
+        max-width: 16vw;
     }
-    .card-body{
+    .card-body {
         align-items: center!important;
-        padding:8%!important;
-        height: 30vw!important;
+        padding: 8%!important;
+        max-height: 30vh!important;
+        max-height: max-content!important;
     }
     #Cards {
         box-sizing: border-box;
@@ -1312,22 +1450,21 @@
         margin-left: 30px;
         margin-right: auto;
     }
-    #Cards h5{
+    #Cards h5 {
         font-size: 2vw;
     }
-    #Cards p{
+    #Cards p {
         font-size: 1.4vw;
     }
-    .btn{
+    .btn {
         width: 10vw!important;
         display: block!important;
         margin-left: auto!important;
         margin-right: auto!important;
         bottom: 5%!important;
-        position: absolute!important;
     }
-    #Cards a{
-        font-size: 1vw; 
+    #Cards a {
+        font-size: 1vw;
     }
     #Cards>div.card {
         margin-bottom: 20px;
@@ -1380,10 +1517,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    #comentarios p{
+    #comentarios p {
         font-size: 1.5vw;
     }
-    #comentarios h2{
+    #comentarios h2 {
         font-size: 2vw;
     }
     .comment {
@@ -1455,12 +1592,10 @@
         grid-gap: 30px;
         width: 100%;
     }
-    
-    #container-grid h2{
+    #container-grid h2 {
         font-size: 5vw;
         margin-top: 5%;
     }
-
     #Novidades {
         display: grid;
         white-space: normal;
@@ -1515,7 +1650,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .rep p{
+    .rep p {
         font-size: 1.7vw;
     }
     .rep a {
@@ -1583,4 +1718,4 @@
         display: block;
         text-align: center;
     }
-} 
+}
