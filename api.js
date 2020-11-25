@@ -1,7 +1,8 @@
 let API_KEY = 'b97bda4a0dc150047e63e942fef57608';
-
+let count = 0;
 function ListMovies(e) {
     //document.getElementById('menu-list').style.display = 'none';
+
     let space = document.getElementById('CardsNew');
     let text = '';
     let dados = JSON.parse(this.responseText);
@@ -34,8 +35,12 @@ function Finder() {
     document.getElementById('Destaques').innerHTML = '<div id="CardsNew"> <div>';
     document.getElementById('Avaliações').style.display = 'none';
     document.getElementById('Entrevistas').style.display = 'none';
+    document.getElementById('menu-list').style.display = 'none';
+    let menu = document.getElementById('menu-icon');
+    menu.children[0].style.display = 'block';
+    menu.children[1].style.display = 'none';
+ }
 
-}
 
 function verifyEnter(e) {
     if (e.which == 13) {
@@ -43,5 +48,29 @@ function verifyEnter(e) {
     }
 }
 
+function Initial(){
+    document.getElementById('Lançamento').style.display = 'block';
+    document.getElementById('Avaliações').style.display = 'block';
+    document.getElementById('Destaques').style.display = 'none';
+    document.getElementById('Entrevistas').style.display = 'block';
+}
+
+function menu(){
+    let lista = document.getElementById('menu-list');
+    if(count % 2 == 0){
+    lista.style.display = 'block';
+    lista.style.height = '100%';
+    lista.style.alignContent = 'center';
+    lista.style.paddingTop = '40%';
+    } else{
+        lista.style.display = 'none';
+        lista.style.height = '0%';
+    }
+    count++;
+}
+
 document.getElementById('submit-search').addEventListener('click', Finder);
 document.getElementById('search-txt').addEventListener('keypress', verifyEnter);
+document.getElementById('logo-cineflix').addEventListener('click', Initial);
+document.getElementById('menu-icon').addEventListener('click',menu);
+// document.getElementsByClassName('menuinitialbutton').addEventListener('click',menuClose);
